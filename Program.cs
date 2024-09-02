@@ -21,9 +21,15 @@ class Program
         // String variabel navn holder på verdien vi gir til konsollen
         string? navn = Console.ReadLine();
         // Skriver ut en liten melding + navnet som er gitt til konsollen
-        Console.WriteLine("Hei" + navn);
+        Console.WriteLine("Hei " + navn);
         // Char typen, tar en bestemt bokstav
-        char a = 'A';
+        char a = '@';
         Console.WriteLine(a);
+
+        // Henter variabel utenfra main scope
+        Console.WriteLine(myInt);
     }
+
+    // Må legge til static, for å kunne hentes inn i main scope
+    static int myInt = 5;
 }
