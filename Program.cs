@@ -26,6 +26,32 @@ class Program
         char a = '@';
         Console.WriteLine(a);
 
+        string[] myStringArray = {"Hello", "C#", "Array!"};
+        for(int i = 0; i < myStringArray.Length; i++) {
+                Console.WriteLine(myStringArray[i]);
+           };
+
+        List<int> myNumbers = new List<int>();
+        myNumbers.Add(1);
+        myNumbers.Add(2);
+        myNumbers.Add(3);
+        foreach(int numbers in myNumbers) {
+        Console.WriteLine(numbers);
+        }
+
+        string? greeting = Console.ReadLine();
+        switch(greeting) {
+            case "Hei":
+                Console.WriteLine("Hei Terminal!");
+                break;
+            case "Hade":
+                Console.WriteLine("Snakkes");
+                break;
+            default:
+                Console.WriteLine("Alrighty");
+                break;
+        }
+
         // Henter variabel utenfra main scope
         Console.WriteLine(myInt);
     }
